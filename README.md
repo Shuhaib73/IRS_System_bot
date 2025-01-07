@@ -1,6 +1,6 @@
-## Intelligent Information Retrieval System: Powered by Langchain 🤖
+## Retrieval-Augmented Generation (RAG) System: Powered by Langchain 🤖
 
-"Welcome to IRS (Information Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
+"Welcome to RAG & IRS (Information Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
 
 ### *** Note: To access the Web Application Kindly visit my portfolio website or you can contact me through LinkedIn/Mail.***
 
