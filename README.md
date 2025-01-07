@@ -2,8 +2,8 @@
 
 "Welcome to RAG & IRS (Information Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
 
-### **Access the Web Application**:  
-[http://18.208.146.50:8080/](http://18.208.146.50:8080/) _(Right-click and select "Open link in new tab" for convenience)_
+### **Access the Web Application**:  [http://18.208.146.50:8080/](http://18.208.146.50:8080/) 
+_(CTRL + Right-click To "Open link in new tab" for convenience)_
 
 ### **Note**: Kindly select *"Gemini-1.5-Flash-Latest"* the primary LLM type, as the other two models (LLAMA-3.1-8B-Instant and Gemma2-9B-IT) are still under development.
 
