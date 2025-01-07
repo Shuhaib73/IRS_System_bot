@@ -15,7 +15,16 @@
 ✅ Multiple PDF Handling: Effortlessly process and search through multiple PDFs to provide comprehensive, context-aware responses from a wide range of document sources. Users can upload multiple files and query them simultaneously, making document-based searches efficient and scalable. 📄📄
 
 ---
+## Demo 
 
+![Demo](https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/demo_rag.gif)
+
+---
+## <br>**➲ RAG Architecture** :
+
+<img src="https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/RAG_Google.png" alt="RAG Pipeline" style="width: 750px; height: 300px; border: 2px solid #ccc; border-radius: 8px; display: inline-block; margin-right: 10px;">
+
+----
 ## 🛠️ **Technologies Used**
 
 - **Python** 🐍: The core programming language that powers the app.  
@@ -31,12 +40,6 @@
     - LLAMA-3.1-8B-Instant: A versatile language model supporting a broad range of NLP tasks, improving contextual understanding and generating relevant responses quickly.
     - Gemma2-9B-IT: A powerful generative model designed for information retrieval, improving semantic matching between queries and data, tailored for high-accuracy results.
 ----
-
-
-## <br>**➲ RAG Architecture** :
-
-<img src="https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/RAG_Google.png" alt="RAG Pipeline" style="width: 750px; height: 300px; border: 2px solid #ccc; border-radius: 8px; display: inline-block; margin-right: 10px;">
-
 
 
 -----
