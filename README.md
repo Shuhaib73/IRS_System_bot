@@ -6,12 +6,13 @@
 
 ### 📖 **Features**
 
-✅ AI-Powered Query Responses: Leverage LLMs (Large Language Models) and vector databases to understand and respond to user queries with precision. By performing semantic similarity searches, the system provides context-aware responses tailored to the user's needs. 🤖
+✅ AI-Powered Query Responses: Leverage LLMs (Large Language Models) and vector databases, which store word embeddings, to understand and respond to user queries with precision. By performing semantic similarity searches on these embeddings, the system provides context-aware responses tailored to the user's needs. 🤖
 
-✅ Real-Time Information Retrieval: Instantly retrieve and present the most relevant data, documents, or knowledge from the database based on user inputs. ⏱️
+✅ Real-Time Information Retrieval: Instantly retrieve and present the most relevant data, documents, or knowledge from the database based on user inputs. The system efficiently handles queries over multiple PDFs to deliver quick, reliable responses. ⏱️
 
-✅ Customizable Knowledge Bases: Tailor information retrieval models to suit the specific needs of your industry, data sources, or organizational structure. ⚙️
+✅ Customizable Knowledge Bases: Tailor information retrieval models to suit the specific needs of your industry, data sources, or organizational structure. Adapt the system to provide more relevant and precise insights based on the unique content of your documents. ⚙️
 
+✅ Multiple PDF Handling: Effortlessly process and search through multiple PDFs to provide comprehensive, context-aware responses from a wide range of document sources. Users can upload multiple files and query them simultaneously, making document-based searches efficient and scalable. 📄📄
 
 ---
 
