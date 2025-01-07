@@ -1,10 +1,10 @@
-# Intelligent Retrieval System: Powered by Langchain 🤖🧠   
+## Intelligent Information Retrieval System: Powered by Langchain 🤖
 
 "Welcome to IRS (Intelligent Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
 
 ### *** Note: To access the Web Application Kindly visit my portfolio website or you can contact me through LinkedIn/Mail.***
 
-## 📖 **Features**
+### 📖 **Features**
 
 ✅ AI-Powered Query Responses: Utilize AI and NLP to understand and respond to user queries with precision and relevance. 🤖
 
