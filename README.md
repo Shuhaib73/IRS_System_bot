@@ -10,8 +10,6 @@
 
 ✅ Real-Time Information Retrieval: Instantly retrieve and present the most relevant data, documents, or knowledge from the database based on user inputs. ⏱️
 
-✅ Context-Aware Interaction: Leverage machine learning algorithms to process and understand user context, delivering smarter and more accurate responses. 🧠
-
 ✅ Customizable Knowledge Bases: Tailor information retrieval models to suit the specific needs of your industry, data sources, or organizational structure. ⚙️
 
 
@@ -22,10 +20,10 @@
 - **Python** 🐍: The core programming language that powers the app.  
 - **Flask**: A Backend web framework for building web applications.
 - **HTML & CSS**: The markup language used to structure the content and layout of the web page and CSS styles the HTML content, controlling the appearance, such as colors, fonts, and layouts..
-- **Pinecone**: A vector database for performing semantic similarity searches, ensuring fast and relevant product recommendations based on user behavior and preferences.
-- **LangChain** 🔗: An open-source framework for developing applications powered by language models, used here for creating a robust AI-powered recommendation system.
-- **GoogleGenerativeAIEmbeddings**: Leveraging Google’s generative AI embeddings to create semantic vectors of text, enhancing the recommendation process by enabling more accurate and context-aware suggestions.
-- **Ensemble Retriever**: A powerful component for combining multiple retrieval methods to improve the accuracy and relevance of search results and recommendations.
+- **Pinecone**: A vector database for performing semantic similarity searches, enabling fast and relevant responses based on the query's context and the indexed documents.
+- **LangChain** 🔗:  An open-source framework for developing applications powered by language models, used for building a robust query-response system within IRS, supporting document-based questions.
+- **GoogleGenerativeAIEmbeddings**: Leveraging Google’s generative AI embeddings to create semantic vectors of text, improving the accuracy of search and response generation.
+- **Ensemble Retriever**: A powerful component for combining multiple retrieval methods, improving the accuracy and relevance of search results and responses.
 - **Groq**:  High-performance hardware for accelerating machine learning workloads, optimizing retrieval and response time for large data.
 - **LLM Models:**
     - Gemini-1.5-Flash-Latest: A cutting-edge LLM model optimized for language understanding and generation tasks, enhancing query comprehension and generating accurate responses.
