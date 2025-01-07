@@ -1,3 +1,4 @@
+# Import necessary libraries
 import os
 import time
 from dotenv import load_dotenv
@@ -14,20 +15,19 @@ from pinecone import Pinecone, ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
-
-# Importing the ChatGroq class from langchain_groq
 from langchain_groq import ChatGroq
 
+# Importing the `TextPreprocessor` and `PineconeConfig` classes from the `pinecone_db` module,
 from src.db_configuration.pinecone_db import TextPreprocessor, PineconeConfig
 
 
-# Creating a Flask application instance
+# Initialize Flask application
 app = Flask(__name__)
 
-# Call the function to load environment variables from a .env file
+# Load environment variables from a .env file
 load_dotenv()
 
-# Set the Flask secret key for session management
+# Configure the Flask app with a secret key from environment variables
 app.config['SECRET_KEY'] = os.getenv('APP_SEC_KEY')
 
 # Configuration
@@ -63,9 +63,9 @@ def home():
         get_flashed_messages()
 
         # Check if files were uploaded
-        
         files = request.files.getlist('file')
 
+        # Initialize the text preprocessor to extract and chunk text from uploaded files
         TextPreprocess_obj = TextPreprocessor()
 
         # Extract text from files and create chunks
@@ -85,42 +85,33 @@ def home():
     return render_template('irs_page.html')
 
 
-# Define a route for the 'IRS_LLM_Page' URL endpoint
+# route for the 'IRS_LLM_Page' URL endpoint
 @app.route('/IRS_LLM_Page', methods=["GET", "POST"])
 def irs_llm_page():
-
-    # return render_template('irs_page_chat.html')
 
     # Retrieve the LLM model name and embedding model names from the session
     llm_model_name = session.get("llm_model")
 
     if request.method == "POST":
-
+        # Handle 'Gemini' model case
         if llm_model_name in ['gemini-1.5-flash-latest']:
-
             llm = ChatGoogleGenerativeAI(model='gemini-1.5-flash-latest')
 
-            # Retrieve the query message from the form
+            # Retrieve query and conversation history
             query = request.form['msg']
-
-            # Retrieve the conversation history from the session or initialize it 
             conversation_history = session.get('conversation_history', [])
-
-            # retrieve the index name from the session
             index_name = session.get('index_name')
 
+            # Configure Pinecone and get the chain
             pinecone_obj = PineconeConfig(index_name=index_name)
             prompt = PineconeConfig.cus_prompt()
-
             chain = pinecone_obj.get_chain(llm=llm, prompt=prompt)
 
-            # Invoke the chain with the query and conversation history
+            # Combine conversation history with the current query
             full_query = "\n".join(conversation_history) + "\nUser: " + query
 
-            # Invoke the chain with the query and return the result as JSON
+            # Get model response and update the conversation history
             res = chain.invoke(full_query)
-
-            # Update the conversation history
             conversation_history.append(f"User: {query}")
             conversation_history.append(f"{res}")
 
@@ -140,18 +131,16 @@ def irs_llm_page():
                 temperature=0.2
             )
 
-            # Retrieve the query message from the form
+            # Retrieve query and index name
             query = request.form['msg']
-
-            # retrieve the index name from the session
             index_name = session.get('index_name')
 
+            # Configure Pinecone and get the chain
             pinecone_obj = PineconeConfig(index_name=index_name)
             prompt = PineconeConfig.cus_prompt()
-
             chain = pinecone_obj.get_chain(llm=llm, prompt=prompt)
 
-            # Invoke the chain with the query and return the result as JSON
+            # Invoke the chain with the query and return the result
             res = chain.invoke(query)
 
             return jsonify({'response': res})
@@ -167,15 +156,13 @@ def irs_llm_page():
                 temperature=0.2
             )
 
-            # Retrieve the query message from the form
+            # Retrieve query and index name
             query = request.form['msg']
-
-            # retrieve the index name from the session
             index_name = session.get('index_name')
 
+            # Configure Pinecone and get the chain
             pinecone_obj = PineconeConfig(index_name=index_name)
             prompt = PineconeConfig.cus_prompt()
-
             chain = pinecone_obj.get_chain(llm=llm, prompt=prompt)
 
             # Invoke the chain with the query and return the result as JSON
@@ -183,6 +170,7 @@ def irs_llm_page():
 
             return jsonify({'response': res})
    
+    # Render the chat page on GET request
     return render_template('irs_page_chat.html')
 
 
