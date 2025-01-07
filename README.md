@@ -1,4 +1,4 @@
-## Retrieval-Augmented Generation (RAG) System: Powered by Langchain 🤖
+## Retrieval-Augmented Generation (RAG) System: Powered by Langchain & LLM 🤖
 
 "Welcome to RAG & IRS (Information Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
 
