@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Information Retrieval System">
+        <meta name="keywords" content="">
+        <meta name="author" content="Shuhaib">
+
+        {% block style %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='irs_page.css') }}">
+        {% endblock %}
+
+        <script src="https://kit.fontawesome.com/55d7ca6d4f.js" crossorigin="anonymous"></script>
+        
+        <title>IRS Page</title>
+  
+    </head>
+    
+    <body>
+        {% block header %}
+            <header class="header" id="header">
+                <div class="nav-container">
+                    <a href="#" class="logo" id="web_log">IRS.io</a>
+                    <div class="mobile" id="menu"><i class='bx bx-menu-alt-right'></i></div>
+                    <nav class="navbar" id="navbar">
+                        <a href="{{url_for('home')}}" class="link" id="active">home</a>
+                        <a href="https://github.com/Shuhaib73" class="link" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/mohamedshuhaib/" class="link" target="_blank">LinkedIn</a>
+                        <a href="#" class="link">contact</a>
+                        <div class="mobile close" id="close"><i class='bx bx-x'></i></div>
+        
+                    </nav>
+                </div>
+        
+            </header>
+        {% endblock %}
+
+        {% block content %}
+            <h1 id="page_til">Welcome to the Information Retrieval System</h1>
+
+            <div class="wrapper">
+                <div class="irs_container">
+                    <form action="{{ url_for('home') }}" method="post" enctype="multipart/form-data">
+                        <div class="irs_form">
+                            <label for="idx_name" id="idx_label">Please provide the Index Name:</label>
+                            <input type="text" id="idx_name1" name="idx_name" placeholder="Index names are restricted to lowercase ex: test-index" required>
+
+                            <!-- Radio button options -->
+                            <p class="llm_p">Please Select the LLM:</p>
+                            <div class="radio-button-group1">
+
+                                <input type="radio" id="option2" name="option" value="gemini-1.5-flash-latest">
+                                <label for="option2">Gemini 1.5 Flash</label>
+
+                                <input type="radio" id="option3" name="option" value="llama-3.1-8b-instant">
+                                <label for="option3">Llama 3.1</label>
+
+                                <input type="radio" id="option1" name="option" value="gemma2-9b-it" required>
+                                <label for="option1">Gemma 7B</label>
+                            </div>
+
+                            <p class="llm_p">Please upload a PDF file: </p>
+
+                            <input type="file" id="file" name="file" accept=".pdf" multiple onchange="displayFiles()">
+
+                            <ul id="file-list"></ul> <!-- List to display selected files -->
+                        </div>
+                        <button type="submit" class="btn_1">Upload</button>
+                    </form>
+
+                </div>
+            </div>
+        {% endblock %}
+
+        {% block script %}
+            <script>
+                function displayFiles() {
+                    const fileInput = document.getElementById('file');
+                    const fileList = document.getElementById('file-list');
+                    fileList.innerHTML = ''; // Clear previous file list
+        
+                    const files = fileInput.files;
+                    if (files.length === 0) {
+                        fileList.innerHTML = '<li>No files selected</li>';
+                        return;
+                    }
+        
+                    for (let i = 0; i < files.length; i++) {
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `
+                            ${files[i].name}
+                            <i class="fa-solid fa-circle-check" style="color: #88e665; margin-left: 20px;"></i>
+                        `;
+                        fileList.appendChild(listItem);
+                    }
+                }
+            </script>
+            {% endblock %}
+    </body>
+
+</html>
