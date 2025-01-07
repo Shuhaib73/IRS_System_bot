@@ -2,7 +2,14 @@
 
 "Welcome to RAG & IRS (Information Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
 
-### *** Note: To access the Web Application Kindly visit my portfolio website or you can contact me through LinkedIn/Mail.***
+### **Access the Web Application**: http://18.208.146.50:8080/
+
+---
+## Demo 
+
+![Demo](https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/demo_rag.gif)
+
+----
 
 ### 📖 **Features**
 
@@ -14,10 +21,6 @@
 
 ✅ Multiple PDF Handling: Effortlessly process and search through multiple PDFs to provide comprehensive, context-aware responses from a wide range of document sources. Users can upload multiple files and query them simultaneously, making document-based searches efficient and scalable. 📄📄
 
----
-## Demo 
-
-![Demo](https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/demo_rag.gif)
 
 ---
 ## <br>**➲ RAG Architecture** :
