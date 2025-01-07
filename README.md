@@ -32,6 +32,15 @@
     - Gemma2-9B-IT: A powerful generative model designed for information retrieval, improving semantic matching between queries and data, tailored for high-accuracy results.
 ----
 
+
+## <br>**➲ RAG Architecture** :
+
+<img src="https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/RAG_Google.png" alt="RAG Pipeline" style="max-width: 35%; height: 250px; border: 2px solid #ccc; border-radius: 8px; display: inline-block; margin-right: 10px;">
+
+
+
+-----
+
 ## 🌟 Usage
 
 1. Clone the repository to your local machine:
