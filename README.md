@@ -35,6 +35,7 @@
 - **HTML & CSS**: The markup language used to structure the content and layout of the web page and CSS styles the HTML content, controlling the appearance, such as colors, fonts, and layouts..
 - **Pinecone**: A vector database for performing semantic similarity searches, enabling fast and relevant responses based on the query's context and the indexed documents.
 - **LangChain** 🔗:  An open-source framework for developing applications powered by language models, used for building a robust query-response system within IRS, supporting document-based questions.
+- **Amazon EC2** ☁️: The application is deployed on Amazon EC2, leveraging its scalable and reliable infrastructure to ensure high availability and performance.
 - **GoogleGenerativeAIEmbeddings**: Leveraging Google’s generative AI embeddings to create semantic vectors of text, improving the accuracy of search and response generation.
 - **Ensemble Retriever**: A powerful component for combining multiple retrieval methods, improving the accuracy and relevance of search results and responses.
 - **Groq**:  High-performance hardware for accelerating machine learning workloads, optimizing retrieval and response time for large data.
