@@ -30,6 +30,45 @@
     - Gemini-1.5-Flash-Latest: A cutting-edge LLM model optimized for language understanding and generation tasks, enhancing query comprehension and generating accurate responses.
     - LLAMA-3.1-8B-Instant: A versatile language model supporting a broad range of NLP tasks, improving contextual understanding and generating relevant responses quickly.
     - Gemma2-9B-IT: A powerful generative model designed for information retrieval, improving semantic matching between queries and data, tailored for high-accuracy results.
+----
+
+## 🌟 Usage
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/Shuhaib73/IRS_System_bot/tree/main
+   
+   ```
+
+2. Install the required dependencies by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Add .env file
+   ```bash
+    GOOGLE_API_KEY = "AIzajdafl-------------------"
+    PINECONE_API_KEY = "pcsk------------"
+    APP_SEC_KEY = "-----"
+    GROQ_API_KEY = "gsk-----------"
+   ```
+
+
+3. Run the app:
+   ```bash
+       python app.py
+   ```
+
+4. Access the app by opening a web browser and navigating to the provided URL.
+    - By default, Flask will run on http://localhost:5000.
+
+7. Upload the PDF documents you want to analyze.
+
+8. Click the "Upload Documents" button to process the documents and generate vector embeddings.
+
+9. Engage in interactive conversations with the documents by typing your questions in the chat input box.
+
 
 
 ----
