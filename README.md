@@ -4,6 +4,9 @@
 
 ### **Access the Web Application**: http://18.208.146.50:8080/
 
+### **Note**: Kindly select Gemini-1.5-Flash-Latest the primary LLM type, as the other two models (LLAMA-3.1-8B-Instant and Gemma2-9B-IT) are still under development.
+
+
 ---
 ## Demo 
 
