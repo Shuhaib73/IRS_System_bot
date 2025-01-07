@@ -25,7 +25,7 @@
 ---
 ## <br>**➲ RAG Architecture** :
 
-<img src="https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/RAG_Google.png" alt="RAG Pipeline" style="width: 750px; height: 300px; border: 2px solid #ccc; border-radius: 8px; display: inline-block; margin-right: 10px;">
+<img src="https://github.com/Shuhaib73/IRS_System_bot/blob/main/static/architectures/RAG_Google.png" alt="RAG Pipeline" style="width: 750px; height: 350px; border: 2px solid #ccc; border-radius: 8px; display: inline-block; margin-right: 10px;">
 
 ----
 ## 🛠️ **Technologies Used**
