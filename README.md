@@ -2,9 +2,7 @@
 
 "Welcome to RAG & IRS (Information Retrieval System): AI-Powered Platform for Dynamic Information Retrieval and Query Response 🧑‍💻"
 
-
 ### **Note**: Kindly select *"Gemini-1.5-Flash-Latest"* the primary LLM type, as the other two models (LLAMA-3.1-8B-Instant and Gemma2-9B-IT) are still under development.
-
 
 ---
 ## Demo 
@@ -22,7 +20,6 @@
 ✅ Customizable Knowledge Bases: Tailor information retrieval models to suit the specific needs of your industry, data sources, or organizational structure. Adapt the system to provide more relevant and precise insights based on the unique content of your documents. ⚙️
 
 ✅ Multiple PDF Handling: Effortlessly process and search through multiple PDFs to provide comprehensive, context-aware responses from a wide range of document sources. Users can upload multiple files and query them simultaneously, making document-based searches efficient and scalable. 📄📄
-
 
 ---
 ## <br>**➲ RAG Architecture** :
@@ -46,7 +43,6 @@
     - LLAMA-3.1-8B-Instant: A versatile language model supporting a broad range of NLP tasks, improving contextual understanding and generating relevant responses quickly.
     - Gemma2-9B-IT: A powerful generative model designed for information retrieval, improving semantic matching between queries and data, tailored for high-accuracy results.
 ----
-
 
 -----
 
@@ -72,7 +68,6 @@
     GROQ_API_KEY = "gsk-----------"
    ```
 
-
 3. Run the app:
    ```bash
        python app.py
@@ -86,7 +81,6 @@
 8. Click the "Upload Documents" button to process the documents and generate vector embeddings.
 
 9. Engage in interactive conversations with the documents by typing your questions in the chat input box.
-
 
 
 ----
